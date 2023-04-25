@@ -41,6 +41,7 @@ class AccountsController extends Controller
         $account->name = $request->get('name');
         $account->type = $request->get('type');
         $account->amount = $request->get('amount');
+        $account->bank = $request->get('bank');
         $account->user_id = $request->user()->id;
         $account->save();
 
